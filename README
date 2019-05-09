@@ -1,0 +1,7 @@
+CloudWatch consumer
+
+This program run a aws client that periodically polls event data from Cloudwatch service and then forwards that info into a Devo account.
+
+This is just a sample program. Do not use for production purposes.
+
+
