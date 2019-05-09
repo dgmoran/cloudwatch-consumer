@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.devo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+dependencies {
+
+    compile group: 'com.amazonaws', name: 'aws-java-sdk', version: '1.11.490'
+    compile 'com.devo:jSender:1.0-SNAPSHOT'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
